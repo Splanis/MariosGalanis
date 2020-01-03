@@ -66,8 +66,8 @@ a {
     border-bottom: 2px solid white;
 }
 
-.active{
-    border-bottom: 2px solid pink;
+.active {
+    border-bottom: 2px solid white;
 }
 
 section {
@@ -94,13 +94,8 @@ footer {
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
+    width: 100%;
     text-align: center;
-}
-
-.contact-form{
-    display: flex;
-    flex-direction: column;  
-    padding: 50px;
 }
 
 .contact-form input {
@@ -110,10 +105,11 @@ footer {
 }
 
 .contact-form .message {
-    height: 15rem;
+    padding-top: 13px;
+    padding-bottom: 150px;
 }
 
-.submit-btn{
+.submit-btn {
     color: white;
     background: black;
     border-radius: 20px;
@@ -122,6 +118,19 @@ footer {
     font-size: 16px;
 }
 
-.submit-btn:hover { 
+.submit-btn:hover {
     cursor: pointer;
+}
+
+#about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 350px;
+}
+
+#about img {
+    display: grid;
+    border-radius: 50%;
+    height: 340px;
+    margin: 200px;
 }
