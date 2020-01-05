@@ -16,27 +16,19 @@ body {
     height: 100vh;
     line-height: 1.5;
     font-family: "Nunito", sans-serif;
-
     transform-style: preserve-3d;
 }
 
-#home {
+.container {
     background-image: url(assets/bg.jpg);
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
 }
 
-#home h1,
-#home h2 {
-    color: white;
-}
-
-#home h1 {
-    animation: fadeLeft 2s;
-}
-
-#home h2 {  
-    animation: fadeRight 2s;
+.about,
+.projects,
+.contact {
+    background: white;
 }
 
 .container {
@@ -119,6 +111,45 @@ footer {
     font-size: 12px;
 }
 
+.home h1,
+.home h2 {
+    color: white;
+}
+
+.home h1 {
+    animation: fadeLeft 2s;
+}
+
+.home h2 {
+    animation: fadeRight 2s;
+}
+
+.about {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-1, .project-2, .project-3 {
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 0 10px;
+    width: 400px;
+}
+
+.projects > h1 {
+    transform: translateY(-100%);
+}
+
+.projects img {
+    width: 400px;
+    height: 250px;
+}
+
 .contact-form input {
     width: 25rem;
     height: 1.8rem;
@@ -143,29 +174,10 @@ footer {
     cursor: pointer;
 }
 
-#about {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0 350px;
-}
-
-#about img {
-    display: grid;
-    border-radius: 50%;
-    height: 340px;
-    margin: 200px;
-}
-
-/* .socials a img {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-} */
-
-.socials {
-}
-
 .me-photo {
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 400px;
     animation: imageIn 2s;
 }
 
