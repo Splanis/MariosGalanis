@@ -129,6 +129,17 @@ footer {
     flex-wrap: wrap;
 }
 
+.about > h1 {
+    margin: 100px;
+}
+
+.me-photo {
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 400px;
+    animation: imageIn 2s;
+}
+
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -174,12 +185,7 @@ footer {
     cursor: pointer;
 }
 
-.me-photo {
-    border-radius: 50%;
-    border: 2px solid black;
-    height: 400px;
-    animation: imageIn 2s;
-}
+
 
 h1,
 h2 {
