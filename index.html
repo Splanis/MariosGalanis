@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css" />
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script type="text/javascript" src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -18,32 +19,6 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <!-- <div class="socials">
-                    <a
-                        href="https://www.linkedin.com/in/marios-galanis-9702a591/"
-                        target="_blank"
-                        ><img
-                            src="assets/linkedin.png"
-                            class="linkedin-btn"
-                            alt="linkedin"
-                    /></a>
-                    <a
-                        href="https://www.linkedin.com/in/marios-galanis-9702a591/"
-                        target="_blank"
-                        ><img
-                            src="assets/github.png"
-                            class="github-btn"
-                            alt="github"
-                    /></a>
-                    <a
-                        href="https://www.linkedin.com/in/marios-galanis-9702a591/"
-                        target="_blank"
-                        ><img
-                            src="assets/cv.png"
-                            class="cv-btn"
-                            alt="cv"
-                    /></a>
-                </div> -->
             </nav>
 
             <section id="home" class="home">
@@ -63,50 +38,87 @@
 
             <section id="projects" class="projects">
                 <h1>Projects</h1>
-                <div class="project">
+                <div class="project-cards">
                     <div class="project-1">
-                        <img src="assets/673095.jpg" /> <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id amet, facere cumque modi impedit eligendi reiciendis quasi ullam, ex sint unde, error reprehenderit blanditiis. Quia totam commodi suscipit explicabo minima?
+                        <img src="assets/673095.jpg" /> <br />
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Id amet, facere cumque modi impedit eligendi
+                        reiciendis quasi ullam, ex sint unde, error
+                        reprehenderit blanditiis. Quia totam commodi suscipit
+                        explicabo minima?
                     </div>
                     <div class="project-2">
-                        <img src="assets/673157.jpg" /> <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id amet, facere cumque modi impedit eligendi reiciendis quasi ullam, ex sint unde, error reprehenderit blanditiis. Quia totam commodi suscipit explicabo minima?
-
+                        <img src="assets/673157.jpg" /> <br />
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Id amet, facere cumque modi impedit eligendi
+                        reiciendis quasi ullam, ex sint unde, error
+                        reprehenderit blanditiis. Quia totam commodi suscipit
+                        explicabo minima?
                     </div>
                     <div class="project-3">
-                        <img src="assets/673095.jpg" /> <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id amet, facere cumque modi impedit eligendi reiciendis quasi ullam, ex sint unde, error reprehenderit blanditiis. Quia totam commodi suscipit explicabo minima?
+                        <img src="assets/673095.jpg" /> <br />
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Id amet, facere cumque modi impedit eligendi
+                        reiciendis quasi ullam, ex sint unde, error
+                        reprehenderit blanditiis. Quia totam commodi suscipit
+                        explicabo minima?
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="contact">
-                <h1>Contact Me</h1>
-                <div class="contact-form">
-                    <form action="POST">
-                        Name <br />
-                        <input type="text" name="name" required /> <br />
-                        Email <br />
-                        <input type="text" name="email" required /> <br />
-                        Subject <br />
-                        <input type="text" name="subject" required /> <br />
-                        Message <br />
-                        <input
-                            type="text"
-                            name="message"
-                            required
-                            class="message"
-                        />
-                        <br />
-                        <br />
-                        <button class="submit-btn" type="submit">
-                            Send
-                        </button>
-                    </form>
+                <div class="contact-container">
+                    <h1>Contact Me</h1>
+                    <div class="contact-form">
+                        <form action="POST">
+                            Name
+                            <input type="text" name="name" required />
+                            Email
+                            <input type="text" name="email" required />
+                            Subject
+                            <input type="text" name="subject" required />
+                            Message
+                            <input
+                                type="text"
+                                name="message"
+                                required
+                                class="message"
+                            />
+                            <button class="contact-submit-btn" type="submit">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                    <div class="socials">
+                        <h3>find me on</h3>
+                        <div class="socials-links">
+                            <a
+                                href="https://www.linkedin.com/in/marios-galanis-9702a591/"
+                                target="_blank"
+                                ><img
+                                    src="assets/linkedin.png"
+                                    class="linkedin-btn"
+                                    alt="linkedin"
+                            /></a>
+                            <a href="https://github.com/Splanis" target="_blank"
+                                ><img
+                                    src="assets/github.png"
+                                    class="github-btn"
+                                    alt="github"
+                            /></a>
+                            <a
+                                href="https://splanis.github.io/CV/"
+                                target="_blank"
+                                ><img
+                                    src="assets/cv.png"
+                                    class="cv-btn"
+                                    alt="cv"
+                            /></a>
+                        </div>
+                    </div>
                 </div>
-
                 <footer>
-                    <p>Copyright © 2020. All Rights Reserverd.</p>
+                    <p>Copyright © 2020. All Rights Reserved.</p>
                 </footer>
             </section>
         </div>
