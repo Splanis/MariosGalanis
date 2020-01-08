@@ -99,12 +99,23 @@ section p {
     color: white;
 }
 
-.home h1 {
-    animation: fadeLeft 2s;
+.info h1 {
+    animation: fadeIn 3.5s;
+    transition: ease 1s;
 }
 
-.home h2 {
-    animation: fadeRight 2s;
+.info {
+    align-self: flex-start;
+    margin-left: 200px;
+    margin-bottom: 300px;
+}
+
+.info h2:nth-child(3) {
+    animation: fadeLeft 3s;
+}
+
+.info h2:nth-child(2) {
+    animation: fadeRight 3s; 
 }
 
 .about {
@@ -196,25 +207,27 @@ section p {
 
 .socials-links img {
     height: 50px;
+    margin: 10px;
+}
+
+.socials-links a:nth-child(1) img {
+    margin-right: 15px;
 }
 
 .socials-links a:nth-child(3) img {
-    height: 42px;
-    margin-bottom: 4px;
-    margin-left: 5px;
+    width: 60px;
 }
 
 .linkedin-btn,
 .github-btn,
 .cv-btn {
-    transition: 0.2s ease-in-out;
+    transition: 0.5s ease-in-out;
     margin: 0 3px;
 }
 
-.linkedin-btn:hover,
-.github-btn:hover,
-.cv-btn:hover {
+.socials-links img:hover {
     transform: scale(1.4);
+    transform: rotate(360deg);
 }
 
 footer {
@@ -227,16 +240,9 @@ footer {
     flex-shrink: 0;
 }
 
-h1,
-h2 {
-    animation: fadeIn 5s;
-    transition: ease 1s;
-}
-
-#particles-js{
+#particles-js {
     background: white;
     height: 100vh;
-   
 }
 
 /* @keyframes imageIn{
@@ -253,12 +259,14 @@ h2 {
 
 @keyframes fadeLeft {
     from {
-        transform: translateX(-100px);
+        opacity: 0;
+        transform: translateX(-400px);
     }
 }
 
 @keyframes fadeRight {
     from {
-        transform: translateX(100px);
+        opacity: 0;
+        transform: translateX(400px);
     }
 }
