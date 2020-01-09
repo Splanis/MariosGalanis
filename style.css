@@ -15,8 +15,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     line-height: 1.5;
-    font-family: "Nunito", sans-serif;
-    transform-style: preserve-3d;
+    font-family: "Nunito", sans-serif; 
 }
 
 .container {
@@ -89,19 +88,6 @@ section p {
 .home h2 {
     color: white;
 }
-
-/* .info h1 {
-    animation: fadeIn 3.5s;
-    transition: ease 1s;
-}
-
-.info h2:nth-child(3) {
-    animation: fadeLeft 3s;
-}
-
-.info h2:nth-child(2) {
-    animation: fadeRight 3s;
-} */
 
 .about {
     flex-direction: row;
