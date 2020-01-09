@@ -43,8 +43,7 @@ body {
     z-index: 1;
 }
 
-li,
-a {
+li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
@@ -104,18 +103,12 @@ section p {
     transition: ease 1s;
 }
 
-.info {
-    align-self: flex-start;
-    margin-left: 200px;
-    margin-bottom: 300px;
-}
-
 .info h2:nth-child(3) {
     animation: fadeLeft 3s;
 }
 
 .info h2:nth-child(2) {
-    animation: fadeRight 3s; 
+    animation: fadeRight 3s;
 }
 
 .about {
@@ -136,14 +129,36 @@ section p {
 
 .project-cards {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.project-cards div {
+    transition: 0.2s ease;
+}
+
+.project-cards div:hover {
+    transform: scale(1.05);
+}
+
+.project-cards img {
+    border-radius: 20px 20px 0 0;
+}
+
+.project-cards p {
+    font-size: 1.2rem;
+}
+
+.project-cards p:nth-child(3) {
+    margin: 10px;
 }
 
 .project-1,
 .project-2,
 .project-3 {
-    border: 2px solid black;
-    border-radius: 3px;
+    background: rgb(245, 245, 245);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.75);
     margin: 0 10px;
     width: 400px;
 }
