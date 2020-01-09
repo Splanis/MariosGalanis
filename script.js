@@ -33,7 +33,7 @@ $(function () {
         var name = $('.name').val()
         var subject = $('.subject').val()
         var message = $('.message').val()
-        var statusElement = $('.status')
+        var statusElement = $('.errors')
         statusElement.empty()
 
         function validateEmail(email) {
