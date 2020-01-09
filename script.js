@@ -14,3 +14,8 @@ $(document).on("click", "ul li a", function () {
         .not(this)
         .removeClass("active");
 });
+
+// Particles Background
+particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
+    console.log('callback - particles.js config loaded');
+});

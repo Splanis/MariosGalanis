@@ -25,9 +25,9 @@ body {
     scroll-behavior: smooth;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    background-image: url(assets/bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    /* background-image: url(assets/bg.jpg);
+    background-attachment: scroll;
+    background-size: cover; */
 }
 
 .navbar {
@@ -68,12 +68,6 @@ li a {
     border-bottom: 2px solid white;
 }
 
-.about,
-.projects,
-.contact {
-    background: white;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -91,6 +85,11 @@ section h1 {
 
 section p {
     font-size: 1.3rem;
+}
+
+.home {
+    background-image: url(assets/bg.jpg);
+    background-attachment: fixed;
 }
 
 .home h1,
@@ -258,13 +257,16 @@ footer {
 #particles-js {
     background: white;
     height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
 }
 
-/* @keyframes imageIn{
-    from{
-        transform: translateY(100%);
-    }
-} */
+#particles-js canvas {
+    overflow: scroll;
+}
 
 @keyframes fadeIn {
     from {
