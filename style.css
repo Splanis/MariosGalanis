@@ -106,18 +106,33 @@ section p {
 
 .about {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.about > h1 {
+/* .about > h1 {
     margin: 100px;
-}
+} */
 
 .my-photo {
     border-radius: 50%;
-    border: 2px solid black;
-    height: 400px;
+    height: 500px;
     animation: imageIn 2s;
+    box-shadow: 0px 0px 45px 5px rgba(0,0,0,0.37);
+    transition: 0.2s ease;
+    margin-left: 150px;
+}
+
+.my-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 45px 15px rgba(0,0,0,0.37); 
+}
+
+.about-me {
+    margin-right: 150px;
+}
+
+.about-me p {
+    width: 500px;
 }
 
 .project-cards {
