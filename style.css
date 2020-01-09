@@ -109,22 +109,18 @@ section p {
     justify-content: space-evenly;
 }
 
-/* .about > h1 {
-    margin: 100px;
-} */
-
 .my-photo {
     border-radius: 50%;
     height: 500px;
     animation: imageIn 2s;
-    box-shadow: 0px 0px 45px 5px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.37);
     transition: 0.2s ease;
     margin-left: 150px;
 }
 
 .my-photo:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 45px 15px rgba(0,0,0,0.37); 
+    box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.37);
 }
 
 .about-me {
@@ -141,12 +137,12 @@ section p {
 
 .project-cards div {
     transition: 0.2s ease;
-    box-shadow: 0px 0px 45px 5px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.37);
 }
 
 .project-cards div:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 45px 15px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.37);
 }
 
 .project-cards img {
@@ -166,9 +162,6 @@ section p {
 .project-3 {
     background: rgb(245, 245, 245);
     border-radius: 20px;
-    /* -webkit-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.75); */
     margin: 0 10px;
     width: 400px;
 }
@@ -272,7 +265,7 @@ footer {
     position: fixed;
     z-index: -10;
     top: 0;
-    left: 0
+    left: 0;
 }
 
 @keyframes fadeIn {
