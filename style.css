@@ -258,23 +258,3 @@ footer {
     position: fixed;
     z-index: -10;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-}
-
-@keyframes fadeLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-400px);
-    }
-}
-
-@keyframes fadeRight {
-    from {
-        opacity: 0;
-        transform: translateX(400px);
-    }
-}
