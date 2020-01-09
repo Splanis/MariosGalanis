@@ -131,6 +131,10 @@ section p {
     width: 500px;
 }
 
+.projects {
+   justify-content: space-evenly;
+}
+
 .project-cards {
     display: flex;
 }
@@ -166,10 +170,6 @@ section p {
     width: 400px;
 }
 
-.projects > h1 {
-    transform: translateY(-100%);
-}
-
 .projects img {
     width: 400px;
     height: 250px;
@@ -191,8 +191,8 @@ section p {
 
 .contact h1 {
     margin: auto;
+    padding-top: 50px;
 }
-
 
 form input {
     width: 25rem;
