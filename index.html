@@ -6,9 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Marios Galanis</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/assets/aos.css" />
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script type="text/javascript" src="script.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="assets/aos.js"></script>
     </head>
     <body>
         <div id="particles-js"></div>
@@ -24,16 +26,16 @@
 
             <section id="home" class="home">
                 <div class="info">
-                    <h1>Marios Galanis</h1>
-                    <h2>Software Engineer</h2>
-                    <h2 class="wd">Web Developer</h2>
+                    <h1 data-aos="fade" data-aos-duration="2000">Marios Galanis</h1>
+                    <h2 data-aos="fade-left" data-aos-duration="2000">Software Engineer</h2>
+                    <h2 data-aos="fade-right" data-aos-duration="2000">Web Developer</h2>
                 </div>
             </section>
 
             <section id="about" class="about">
                 <img class="my-photo" src="assets/me.png" alt="me" />
                 <div class="about-me">
-                    <h1>About Me</h1>
+                    <h1 data-aos="fade" data-aos-duration="1000">About Me</h1>
                     <p>
                         After graduating from Vocational High School I realised
                         that Computers has always been my passion. By breaking
@@ -48,9 +50,9 @@
             </section>
 
             <section id="projects" class="projects">
-                <h1>Projects</h1>
+                <h1 data-aos="fade" data-aos-duration="1000">Projects</h1>
                 <div class="project-cards">
-                    <div class="project-1">
+                    <div class="project-1" data-aos="slide-up" data-aos-duration="1000">
                         <img src="assets/1.jpg" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -66,7 +68,7 @@
                             >
                         </p>
                     </div>
-                    <div class="project-2">
+                    <div class="project-2" data-aos="slide-up" data-aos-duration="2000">
                         <img src="assets/2.jpeg" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -82,7 +84,7 @@
                             >
                         </p>
                     </div>
-                    <div class="project-3">
+                    <div class="project-3" data-aos="slide-up" data-aos-duration="3000">
                         <img src="assets/3.jpg" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -103,15 +105,33 @@
 
             <section id="contact" class="contact">
                 <div class="contact-container">
-                    <h1>Contact Me</h1>
-                    <div class="contact-form">
-                        <form action="https://formspree.io/mlejrvga" method="POST">
+                    <h1 data-aos="fade" data-aos-duration="1000">Contact Me</h1>
+                    <div class="contact-form" data-aos="zoom-in" data-aos-duration="2000">
+                        <form
+                            action="https://formspree.io/mlejrvga"
+                            method="POST"
+                        >
                             Name
-                            <input type="text" name="name" class="name" required />
+                            <input
+                                type="text"
+                                name="name"
+                                class="name"
+                                required
+                            />
                             Email
-                            <input type="email" name="_replyto" class="email" required />
+                            <input
+                                type="email"
+                                name="_replyto"
+                                class="email"
+                                required
+                            />
                             Subject
-                            <input type="text" name="subject" class="subject" required />
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                required
+                            />
                             Message
                             <input
                                 type="text"
@@ -125,7 +145,7 @@
                             </button>
                         </form>
                     </div>
-                    <div class="socials">
+                    <div class="socials" data-aos="zoom-in-up" data-aos-duration="2000">
                         <h3>FIND ME ON</h3>
                         <div class="socials-links">
                             <a

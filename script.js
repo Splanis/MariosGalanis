@@ -1,3 +1,6 @@
+// Aos Scrolling Animations
+AOS.init();
+
 // Active CSS NavBar Links
 $(function () {
     var path = location.href.split("/").pop();
@@ -16,7 +19,7 @@ $(document).on("click", "ul li a", function () {
         .removeClass("active");
 });
 
-// Particles Background
+// Particles.js Background
 particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
     console.log('callback - particles.js config loaded');
 });
@@ -41,12 +44,12 @@ $(function () {
         if (!validateEmail(email)) {
             statusElement.append('<div>-Please enter a valid Email Address.</div>')
             event.preventDefault()
-        } 
+        }
 
         if (subject.length <= 0) {
             statusElement.append('<div>-Please give a message subject.</div>')
             event.preventDefault()
-        } 
+        }
 
         if (name.length <= 0) {
             statusElement.append('<div>-Please enter your name.</div>')
@@ -58,4 +61,20 @@ $(function () {
             event.preventDefault()
         }
     })
+});
+
+// Smooth Scrolling
+$(document).ready(function () {
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
 });
