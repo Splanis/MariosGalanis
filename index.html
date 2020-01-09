@@ -105,13 +105,13 @@
                 <div class="contact-container">
                     <h1>Contact Me</h1>
                     <div class="contact-form">
-                        <form action="POST">
+                        <form action="https://formspree.io/mlejrvga" method="POST">
                             Name
-                            <input type="text" name="name" required />
+                            <input type="text" name="name" class="name" required />
                             Email
-                            <input type="text" name="email" required />
+                            <input type="email" name="_replyto" class="email" required />
                             Subject
-                            <input type="text" name="subject" required />
+                            <input type="text" name="subject" class="subject" required />
                             Message
                             <input
                                 type="text"
@@ -119,6 +119,7 @@
                                 required
                                 class="message"
                             />
+                            <div class="status"></div>
                             <button class="contact-submit-btn" type="submit">
                                 Send
                             </button>
