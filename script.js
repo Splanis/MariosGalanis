@@ -79,7 +79,6 @@ $(document).ready(function () {
     });
 });
 
-
 // Open and close SideNav
 $(".open-sidenav-btn").click(function () {
     $('.side-nav').css("margin-left", "0");
