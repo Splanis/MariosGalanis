@@ -65,8 +65,6 @@ section {
 .home {
     background-image: url(assets/bg.jpg);
     background-attachment: fixed;
-    background: red;
-  
 }
 
 .home h1,
