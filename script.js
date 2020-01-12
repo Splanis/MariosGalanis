@@ -78,3 +78,17 @@ $(document).ready(function () {
         }
     });
 });
+
+
+// Open and close SideNav
+$(".open-sidenav-btn").click(function () {
+    $('.side-nav').css("margin-left", "-0");
+    $('nav').css("margin-top", "-60px");
+});
+
+$(".close-btn, .side-nav-links a").click(function () {
+    $('.side-nav').css("margin-left", "-300px");
+    $('nav').css("margin-top", "0");
+});
+
+
