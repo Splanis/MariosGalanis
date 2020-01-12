@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 // Open and close SideNav
 $(".open-sidenav-btn").click(function () {
-    $('.side-nav').css("margin-left", "-0");
+    $('.side-nav').css("margin-left", "0");
     $('nav').css("margin-top", "-60px");
 });
 
@@ -91,4 +91,10 @@ $(".close-btn, .side-nav-links a").click(function () {
     $('nav').css("margin-top", "0");
 });
 
-
+$(document).click(function(e) {
+    var target = e.target;
+    if (!$(target).is('.side-nav') && $('.side-nav').css('margin-left') == '0px') {
+        $('.side-nav').css("margin-left", "-300px");
+        $('nav').css("margin-top", "0");
+    }
+});
