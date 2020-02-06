@@ -113,17 +113,17 @@
                 <div class="contact-container">
                     <h1 data-aos="fade" data-aos-duration="2000">Contact Me</h1>
                     <div class="contact-form" data-aos="zoom-in" data-aos-duration="2000">
-                        <form action="contactForm.php" method="POST">
+                        <form action="https://formspree.io/mlejrvga" method="POST">
                             Name
                             <input type="text" name="name" class="name" required />
                             Email
-                            <input type="email" name="email" class="email" required />
+                            <input type="email" name="_replyto" class="email" required />
                             Subject
                             <input type="text" name="subject" class="subject" required />
                             Message
                             <input type="text" name="message" required class="message" />
                             <div class="errors"></div>
-                            <button class="contact-submit-btn" type="submit">
+                            <button class="contact-submit-btn" value="submit" name="submit" type="submit">
                                 Send
                             </button>
                         </form>

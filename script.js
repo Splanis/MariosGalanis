@@ -27,7 +27,6 @@ particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
 // Contact Form
 $(function () {
     $('.contact-submit-btn').click(function (event) {
-        event.preventDefault()
 
         var email = $('.email').val()
         var name = $('.name').val()
